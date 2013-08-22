@@ -20,6 +20,7 @@ set cdable_vars
 export LS_OPTIONS='--color=auto'
 eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
+alias tree='tree --charset=ASCII'
 alias ll='ls -lh'
 alias la='ls -lha'
 # bindings
