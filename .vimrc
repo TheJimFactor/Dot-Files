@@ -256,9 +256,11 @@ set pastetoggle=<F11>
 
 " Indentation settings for using hard tabs for indent. Display tabs as
 " two characters wide.
+set tabstop=8
 set shiftwidth=4
-set tabstop=4
-set noexpandtab
+set softtabstop=4
+set expandtab
+"set noexpandtab
 :%retab!
 
 
