@@ -18,11 +18,13 @@
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
 
+filetype plugin indent on
+
 " Attempt to determine the type of a file based on its name and possibly its
 " contents.  Use this to allow intelligent auto-indenting for each filetype,
 " and for plugins that are filetype specific.
 "filetype indent plugin on
-filetype indent plugin on
+" filetype indent plugin on
 " set ofu=syntaxcomplete#Complete
 
 " Close tag script for HTML tags. Bound to Ctrl-] currently.
@@ -31,6 +33,7 @@ au BufNewFile,BufRead *.less set filetype=less
 " django snipmate stuff may break normal python snippets
 autocmd FileType python set ft=python.django " For SnipMate
 autocmd FileType html set ft=htmldjango.html " For SnipMate
+autocmd FileType javascript set ft=javascriptnode.javascript " For SnipMate
 "python autocomplete dict
 " let g:pydiction_location = '~/.vim/after/ftplugin/pydiction/complete-dict'
 let g:pydiction_location = '~/.vim/vimfiles/ftplugin/pydiction/complete-dict'
